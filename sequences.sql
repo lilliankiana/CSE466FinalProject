@@ -1,0 +1,58 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1deb5ubuntu1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Dec 08, 2023 at 05:25 PM
+-- Server version: 8.0.35-0ubuntu0.22.04.1
+-- PHP Version: 8.1.2-1ubuntu2.14
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `elliotl9`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sequences`
+--
+
+CREATE TABLE `sequences` (
+  `SeqName` varchar(50) NOT NULL,
+  `Sequence` varchar(2000) DEFAULT NULL,
+  `Length` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `sequences`
+--
+
+INSERT INTO `sequences` (`SeqName`, `Sequence`, `Length`) VALUES
+('SeqName ', 'Seq ', 'Length'),
+('Seq10   ', 'AAATTTGGGAAATTTGGGAAATTTGGGAT', 9),
+('Seq11   ', 'ATGCCAAGGAAATTTGGGAAATTTGGGAA', 9),
+('Seq12   ', 'CCCCCTAGAAAAATTTGGGAAATTTGGGC', 10),
+('Seq13   ', 'AAATTTGGGTAAATTTGGGTTTTTTTTTT', 10),
+('Seq14   ', 'ATGCCAATTTAAATTTGGGTAAAAAAAAG', 10),
+('Seq15   ', 'CCCCCTAGAAAAATTTGGGTCCCCCCCCT', 10),
+('Seq4    ', 'AAATTTGGGAAATTTGGGTAAATTTGGGT', 9),
+('Seq5    ', 'ATGCCAAGGAAATTTGGGTAAATTTGGGT', 9),
+('Seq6    ', 'CCCCCTAGAACCCCCTAGAACCCCCTAGA', 10),
+('Seq7    ', 'AAATTTGGGTTTTTTTTTTTTTTTTTTTT', 10),
+('Seq8    ', 'ATGCCAATTTAAAAAAAAAAAAAAAAAAA', 10),
+('Seq9    ', 'CCCCCTAGAACCCCCCCCCCCCCCCCCCC', 12);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
